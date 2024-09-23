@@ -1,0 +1,92 @@
+a {
+    color: white;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.836);
+    position: fixed; 
+    z-index: 999; 
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 80px;
+}
+
+.logo {
+    width: 17%;
+}
+
+.logo a {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.details {
+    width: 66%;
+}
+
+.details ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.details a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.details li{
+    display: flex;
+    align-items: center;
+}
+.details ul li:first-child a{
+    color: #cda45e !important;
+}
+.details a:hover{
+    color: #cda45e;
+}
+
+.btn a {
+    border: 2px solid #cda45e;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.btn a:hover{
+    background-color: #cda45e;
+}
+.details button{
+    color: white;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+
+}
+.details button:hover{
+    color: #cda45e;
+    border: none;
+    background-color: transparent;
+}
+.drop-a{
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu.show{
+    background-color: rgba(0, 0, 0, 0.603) !important;
+    padding: 7px;
+}
+.dropdownBasic1 button{
+    color: white;
+}
+.active:focus{
+    color: #cda45e;
+}

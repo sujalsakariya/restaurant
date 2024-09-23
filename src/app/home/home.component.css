@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font {
+    font-family: "Playfair Display", serif;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: -99;
+}
+
+.main::before {
+    content: "";
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.422);
+    z-index: 1;
+}
+
+.detail-main {
+    position: absolute;
+    top: 40%;
+    z-index: 200;
+    padding: 0 100px;
+}
+
+.details {
+    width: 66.66%;
+}
+
+.details h1 {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.details span {
+    color: #cda45e;
+}
+
+.details p {
+    color: rgb(211, 211, 211);
+    font-size: 23px;
+}
+
+.btn {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+.btn a {
+    padding: 8px 30px;
+    border: 2px solid #cda45e;
+    border-radius: 25px;
+    color: white;
+}
+
+.btn a:hover {
+    background-color: #cda45e;
+}
+
+.play-btn {
+    width: 33.33%;
+}
+
+.play-btn a {
+    color: rgb(255, 255, 255);
+    background-color: #cda45e46;
+    background: radial-gradient(#cda45e 50%,color-mix(in srgb, #cda45e, transparent 75%) 52%);
+    padding: 15px 15px;
+    border-radius: 50%;
+    margin-left: 200px;
+    position: relative;
+    animation: btn infinite;
+    overflow: hidden !important;
+}
+
+.play-btn a::before {
+    content: "";
+    position: absolute;
+    animation-delay: 0s;
+    animation: btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid #cda45e6c;
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+.play-btn a:hover {
+    padding: 5px 5px;
+}
+
+.play-btn i {
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.play-btn a i:hover {
+    font-size: 50px;
+}
+
+.play-btn i::before {
+    padding: 15px 15px !important;
+    background-color: #cda45e;
+    border-radius: 50%;
+}
+
+/* about section */
+.ple-main {
+    width: 100%;
+}
+
+.pleasure {
+    width: 100%;
+    display: flex;
+    padding: 80px;
+    background: url(https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/about-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.pleasure::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.about {
+    display: flex;
+    position: static;
+    z-index: 9;
+}
+
+.ple-box {
+    width: 50%;
+    color: white;
+}
+
+.ple-box h5 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.li-3 {
+    display: flex;
+}
+
+.about-sec {
+    padding: 5px 30px 0 0;
+}
+
+.about-sec ul {
+    color: rgb(204, 204, 204);
+}
+
+.about-sec i {
+    padding-right: 10px;
+    font-size: 22px;
+    color: #cda45e;
+}
+
+.section p {
+    color: rgb(122, 122, 122);
+    font-style: italic;
+}
+
+.about .section p {
+    color: rgb(143 143 143) !important;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.ple-box img {
+    width: 100%;
+    height: 397px;
+    border: 6px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.about .scl {
+    transition: 0.5s;
+}
+
+.scl:hover img{
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 12px 1px #484848;
+}
+
+/* why-us */
+.why-us {
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+
+.main-us {
+    width: 100%;
+    padding: 80px;
+}
+
+.main-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 20px;
+}
+
+.box {
+    width: 33.33%;
+    border: 1px solid black;
+    background-color: #151411;
+    transition: 0.5s;
+}
+.why-about p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.why-about h4 {
+    color: #cda45e;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+
+.why-about p::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #cda45e;
+    margin: 4px 10px;
+}
+
+.box span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #cda45e;
+}
+
+.box h4 {
+    padding-top: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+.box p{
+    font-size: 14px;
+    color: rgba(181, 181, 181, 0.7);
+}
+.box-ho{
+    padding: 50px 30px;
+    height: 100%;
+}
+
+.box-ho:hover {
+    background-color: #cda45e;
+    padding: 30px 30px 70px 30px;
+}
+.box-ho:hover span{
+    color: black !important;
+}
+.box-ho:hover h4{
+    color: black;
+}
+.box-ho:hover p{
+    color: black;
+}
+
+
+/* menu  */
+.menu{
+    width: 100%;
+    background-color: #151411;
+    padding: 80px;
+}
+.menu-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* .menu-item{
+    width: 40%;
+} */
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  
